@@ -1,14 +1,18 @@
 @use "../abstracts";
 .hero {
-  background-image: url(../image/thumb/backgroud-1.jpg);
-  opacity: 0.9;
-  &__wrap {
-    padding: 30px 0;
-  }
   &__media {
+    width: 100%;
     @include abstracts.screen(md) {
       display: none;
     }
+  }
+  &__img {
+    width: 100%;
+  }
+  &__row {
+    padding: 30px 0;
+    align-items: center;
+    background-image: url(../image/thumb/backgroundform.jpg);
   }
 }
 .formbooking {
@@ -28,6 +32,8 @@
     color: blue;
   }
   &__item {
+    display: flex;
+    gap: 10px;
     border: 1px solid #ccc;
     padding: 5px 10px;
     height: 30px;
@@ -48,6 +54,7 @@
     }
   }
   &__input {
+    width: 100%;
     outline: none;
     border: none;
     background: none;

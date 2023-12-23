@@ -13,6 +13,9 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
 }
+.booking-online {
+  margin-top: 20px;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -28,6 +31,14 @@ button {
 .icon {
   filter: var(--icon-color);
 }
+.text {
+  &--green {
+    color: #00ba51 !important;
+  }
+  &--center {
+    text-align: center !important;
+  }
+}
 textarea,
 button,
 input,
@@ -37,7 +48,7 @@ select {
 }
 .container {
   @include abstracts.screen(md) {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }

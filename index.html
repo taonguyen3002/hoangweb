@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grab 2 bánh , Taxi 4-7 chỗ</title>
+    <title>Đặt xe Online 24/7</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="./js/scripts.js"></script>
-    <!-- Google Tag Manager -->
+    <!-- google search console -->
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -97,6 +97,9 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- end favicon -->
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <header id="header" class="header"></header>
@@ -108,16 +111,27 @@
         <section class="slider">
           <div class="slider-wrap">
             <div class="slider__list">
-              <img
-                src="./assets/image/thumb/slider1.jpg"
-                alt=""
-                class="slider__thumb"
-              />
-              <img
-                src="./assets/image/thumb/slider3.jpg"
-                alt=""
-                class="slider__thumb"
-              />
+              <figure class="slider__media">
+                <img
+                  src="./assets/image/thumb/slider/slider01.jpg"
+                  alt="đặt xe công nghệ"
+                  class="slider__thumb"
+                />
+              </figure>
+              <figure class="slider__media">
+                <img
+                  src="./assets/image/thumb/slider/slider02.jpg"
+                  alt="đặt xe công nghệ"
+                  class="slider__thumb"
+                />
+              </figure>
+              <figure class="slider__media">
+                <img
+                  src="./assets/image/thumb/slider/slider03.jpg"
+                  alt="đặt xe công nghệ"
+                  class="slider__thumb"
+                />
+              </figure>
             </div>
           </div>
         </section>
@@ -131,6 +145,10 @@
               máy,4 chỗ , 7 chỗ, 16 chỗ đến 29 chỗ, phục vụ nhu cầu đi lại, du
               lịch, công tác của quý khách hàng một cách tốt nhất.
             </p>
+            <div id="booking-online" class="booking-online"></div>
+            <script>
+              load("#booking-online", "../template/booking-online.html");
+            </script>
             <div class="intro__list">
               <div class="intro__item">
                 <h3 class="intro__title-sub">DỊCH VỤ XE ÔM CÔNG NGHỆ</h3>
@@ -190,87 +208,6 @@
           </div>
         </section>
       </div>
-      <section class="hero">
-        <div class="hero__wrap">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <form action="" class="formbooking">
-                  <h3 class="formbooking__title">BOOKING ONLINE</h3>
-                  <div class="formbooking__inner d-flex">
-                    <div class="formbooking__item">
-                      <i class="fas formbooking__item--icon1"></i>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        placeholder="Điểm đón"
-                        class="formbooking__input"
-                      />
-                    </div>
-                    <div class="formbooking__item">
-                      <i
-                        class="fas fa-map-marker-alt formbooking__item--icon2"
-                      ></i>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        placeholder="Điểm đến"
-                        class="formbooking__input"
-                      />
-                    </div>
-                    <div class="formbooking__item">
-                      <i class="fas fa-user"></i>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        placeholder="Họ và Tên"
-                        class="formbooking__input"
-                      />
-                    </div>
-                    <div class="formbooking__item">
-                      <i class="fas fa-phone-square-alt"></i>
-                      <input
-                        type="tel"
-                        name=""
-                        id=""
-                        placeholder="Số điện thoại"
-                        class="formbooking__input"
-                      />
-                    </div>
-                    <div class="formbooking__item">
-                      <i class="fa-regular fa-clock"></i>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        placeholder="Thời gian"
-                        class="formbooking__input"
-                      />
-                    </div>
-                  </div>
-                  <button class="formbooking__submit">
-                    <a href="tel:0967782732" class="btn btn--primary"
-                      >ĐẶT NGAY</a
-                    >
-                  </button>
-                </form>
-              </div>
-              <div class="col hero__media">
-                <figure>
-                  <img
-                    src="./assets/image/thumb/taxi-7.png"
-                    alt="taxi"
-                    class="hero__img"
-                  />
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="customer">
         <div class="container">
           <h2 class="customer__title">HƠN 1000+ KHÁCH HÀNG ĐÃ TRẢI NGHIỆM</h2>
@@ -286,9 +223,10 @@
               <section class="customer__item">
                 <figure class="customer__media">
                   <img
-                    src="./assets/image/thumb/customer-1.jpg"
+                    src="./assets/image/thumb/customer/customer-1.jpg"
                     alt=""
                     class="customer__thumb"
+                    loading="lazy"
                   />
                 </figure>
                 <span class="customer__name d-block">Anh Thanh Vinh</span>
@@ -329,9 +267,10 @@
               <section class="customer__item">
                 <figure class="customer__media">
                   <img
-                    src="./assets/image/thumb/customer-2.jpg"
+                    src="./assets/image/thumb/customer/customer-2.jpg"
                     alt=""
                     class="customer__thumb"
+                    loading="lazy"
                   />
                 </figure>
                 <span class="customer__name d-block">Bạn Xuân Trúc</span>
@@ -375,9 +314,10 @@
               <section class="customer__item">
                 <figure class="customer__media">
                   <img
-                    src="./assets/image/thumb/customer-3.jpg"
+                    src="./assets/image/thumb/customer/customer-3.jpg"
                     alt=""
                     class="customer__thumb"
+                    loading="lazy"
                   />
                 </figure>
                 <span class="customer__name d-block">Alex Tenson</span>
@@ -417,9 +357,10 @@
               <section class="customer__item">
                 <figure class="customer__media">
                   <img
-                    src="./assets/image/thumb/customer-4.png"
+                    src="./assets/image/thumb/customer/customer-4.png"
                     alt=""
                     class="customer__thumb"
+                    loading="lazy"
                   />
                 </figure>
                 <span class="customer__name d-block">Anh Nguyễn Phi Hoàng</span>
@@ -460,10 +401,228 @@
           </div>
         </div>
       </section>
+
+      <article class="viewpost">
+        <div class="viewpost__inner">
+          <h2 class="viewpost__heading">Một số bài viết liên quan</h2>
+          <ul class="viewpost__list">
+            <!-- grab Long Thành -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post01.jpg"
+                    alt="Grab Long Thành"
+                    class="viewpost__thumb"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-long-thanh-dong-nai"
+                    >Grab Long Thành - Tổng đài đặt xe Long Thành
+                    0967.782.732</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Long Thành - Dịch vụ tư vấn khách hàng , tham khảo giá cả
+                  , khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ
+                  Long An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-long-thanh-dong-nai"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab trang dai -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post02.jpg"
+                    alt="Grab Trảng Dài"
+                    class="viewpost__thumb"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-trang-dai-dong-nai"
+                    >Grab Trảng Dài - Tổng đài đặt xe Trảng Dài 0967.782.732</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Trảng Dài - Dịch vụ tư vấn khách hàng , tham khảo giá cả
+                  , khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ
+                  Long An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-trang-dai-dong-nai"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab Vĩnh cửu -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post03.jpg"
+                    alt="Grab Vĩnh Cửu"
+                    class="viewpost__thumb"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-vinh-cuu-dong-nai"
+                    >Grab Vĩnh Cửu - Tổng đài đặt xe Vĩnh Cửu 0967.782.732</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Vĩnh Cửu - Dịch vụ tư vấn khách hàng , tham khảo giá cả ,
+                  khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ Long
+                  An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-vinh-cuu-dong-nai"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab Tân Phong -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post04.jpg"
+                    alt="Grab Tân Phong"
+                    class="viewpost__thumb"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-tan-phong-dong-nai"
+                    >Grab Tân Phong - Tổng đài đặt xe Tân Phong 0967.782.732</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Tân Phong - Dịch vụ tư vấn khách hàng , tham khảo giá cả
+                  , khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ
+                  Long An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-tan-phong-dong-nai"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab Tân Hiệp -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post05.jpg"
+                    alt="Grab Tân Hiệp"
+                    class="viewpost__thumb"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-tan-hiep-dong-nai"
+                    >Grab Tân Hiệp - Tổng đài đặt xe Tân Hiệp 0967.782.732</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Tân Hiệp - Dịch vụ tư vấn khách hàng , tham khảo giá cả ,
+                  khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ Long
+                  An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-tan-hiep-dong-nai"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab Long Khánh -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post06.jpg"
+                    alt="Grab Long Khánh"
+                    class="viewpost__thumb"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-long-khanh-dong-nai"
+                    >Grab Long Khánh - Tổng đài đặt xe Long Khánh
+                    0967.782.732</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Long Khánh - Dịch vụ tư vấn khách hàng , tham khảo giá cả
+                  , khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ
+                  Long An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a
+                    href="https://datxenhanh247.pro/post/grab-long-khanh-dong-nai"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+            <!-- grab Đồng Nai -->
+            <li class="viewpost__item">
+              <section class="viewpost__wrap">
+                <figure class="viewpost__media">
+                  <img
+                    src="./assets/image/thumb/post/post07.jpg"
+                    alt="Grab Đồng Nai"
+                    class="viewpost__thumb"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="viewpost__title">
+                  <a href="https://datxenhanh247.pro/post/grab-dong-nai"
+                    >Grab Đồng Nai - Tổng đài đặt xe Đồng Nai 0967.782.732</a
+                  >
+                </h3>
+                <p class="viewpost__desc">
+                  Grab Đồng Nai - Dịch vụ tư vấn khách hàng , tham khảo giá cả ,
+                  khuyến mãi , đặt trước chuyến đi.Dịch vụ gọi xe công nghệ Long
+                  An giá cả hợp lí - tiết kiệm - an toàn - chu đáo .
+                </p>
+                <button class="viewpost__btn btn--rounded btn btn--primary">
+                  <a href="https://datxenhanh247.pro/post/grab-dong-nai"
+                    >Đọc Bài Viết</a
+                  >
+                </button>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </article>
       <section class="contact">
         <div class="contact__item">
           <div class="contact__zalo">
-            <a href="tel:0859322813">
+            <a href="tel:0967782732">
               <img
                 src="./assets/image/icon/Icon_of_Zalo.svg"
                 alt=""
